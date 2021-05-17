@@ -15,4 +15,5 @@ makeCacheMatrix <- function(x = matrix() {
 ## Same here, changed "mean" to "solve" and "m" to "s"
 cacheSolve <- function(x, ...) {
   solve(x)
+  
 }
