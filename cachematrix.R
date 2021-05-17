@@ -1,3 +1,7 @@
+## 'makeCachematrix': this function creates a special matrix
+## that can cache its inverse
+
+## This function is setting the value of matrix if not already defined
 makeCacheMatrix <- function(x = matrix() {
   s <- NULL
   set <- function(y) {
@@ -11,9 +15,10 @@ makeCacheMatrix <- function(x = matrix() {
        setsolve = setsolve,
        getsolve = getsolve)
 }
-##
-## Same here, changed "mean" to "solve" and "m" to "s"
+##this function will return the inverse of matrix by the us of pre defined...
+## function "solve()" in R, that take one argument that is matrix in my case ...                         
+## and return its inverse..........
 cacheSolve <- function(x, ...) {
   solve(x)
-  
+  ## solve function return the inverse of matrix 'x'
 }
